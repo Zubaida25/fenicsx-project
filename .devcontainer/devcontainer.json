@@ -1,0 +1,28 @@
+{
+  "name": "FEniCSx Devcontainer",
+  "image": "ghcr.io/fenics/dolfinx/dolfinx:stable",
+  "runArgs": [
+    "--init",
+    "--ipc=host",
+    "--ulimit",
+    "stack=67108864"
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "python.analysis.extraPaths": [
+      "/usr/local/lib/python3.10/dist-packages"
+    ],
+    "jupyter.jupyterServerType": "local"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers"
+  ],
+  "postCreateCommand": "pip3 install --upgrade pip && pip3 install gmsh meshio",
+  "remoteUser": "root"
+}
+book.ipynb com visualização e exportação de resultados.
+Queres que monte esse conteúdo inicial para ti?
