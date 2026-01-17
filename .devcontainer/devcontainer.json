@@ -24,5 +24,3 @@
   "postCreateCommand": "pip3 install --upgrade pip && pip3 install gmsh meshio",
   "remoteUser": "root"
 }
-book.ipynb com visualização e exportação de resultados.
-Queres que monte esse conteúdo inicial para ti?
