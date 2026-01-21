@@ -6,9 +6,6 @@
       "version": "3.10"
     }
   },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
   "postCreateCommand": "pip install gmsh meshio pyvista matplotlib",
   "customizations": {
     "vscode": {
@@ -16,7 +13,10 @@
         "ms-python.python",
         "ms-toolsai.jupyter",
         "ms-vscode.cpptools"
-      ]
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
     }
   }
 }
